@@ -1,0 +1,11 @@
+<?php
+/** @var \WeltPixel\SmartProductTabs\Helper\Data $_helper */
+$_helper = $this->helper('WeltPixel\SmartProductTabs\Helper\Data');
+$inlineCss = $_helper->getSystemTabsInlineCss();
+?>
+
+<?php if ($inlineCss): ?>
+    <style scoped>
+        <?php /* @noEscape */ echo $inlineCss; ?>
+    </style>
+<?php endif; ?>
